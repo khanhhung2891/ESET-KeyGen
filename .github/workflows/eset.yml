@@ -23,7 +23,8 @@ on:
         - fakemail
         - inboxes
         - incognitomail
-        default: fakemail
+        - emailfake
+        default: emailfake
       key_type:
         description: 'Modes of operation'
         required: true
@@ -31,7 +32,6 @@ on:
         options:
         - --key
         - --small-business-key
-        - --vpn-codes
         default: --key
       os:
         description: 'Operating System of runner'
